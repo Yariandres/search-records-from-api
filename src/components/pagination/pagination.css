@@ -1,0 +1,10 @@
+ul {
+  margin: 2rem 0;
+}
+
+
+li {
+  border: 1px solid #eee;
+  display: inline;
+  padding: 1rem 1.5rem;
+}

@@ -1,0 +1,25 @@
+.field-container {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.input-filed {
+  display: block;
+  font-size: inherit;
+  color: rgba(85, 85, 85, 0.472);
+  padding: 1.5rem 1rem;
+  border: 1px solid #ECECEC;
+  border-radius: 5px;
+  transition: all .3s;
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(#000, .1);
+  border-bottom: #D1D5DA solid greenyellow;
+}
+
+input::-webkit-input-placeholder {
+  color: inherit;
+}

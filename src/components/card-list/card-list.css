@@ -1,7 +1,6 @@
-.card-list {
-  width: 80vw;
-  margin: 0 auto;
+.card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  gap: 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }

@@ -1,8 +1,14 @@
 import React from 'react';
+import { Card } from '../card/card-component';
+
+import './card-list.css';
 
 export const CardList = props => {
-  console.log(props)
   return (
-    <div className="">Hello</div>
+    <div className="card-list">
+      {props.records.map(record => (
+        <Card key={record.id} record={record}/>
+        ))}
+    </div>
   )
 };

@@ -24,7 +24,6 @@ class App extends Component {
       .then(users => this.setState({ 
             records: users.data, 
             totalResults: users.data.totalResults,
-
           }));
   }
 
@@ -55,9 +54,17 @@ class App extends Component {
           placeholder="Search for a record"
           handleChange={this.handleChange}  
         />
+
         <h1 className="title">{ title }</h1>
-        <Pagination pages={numberPages} nextPage={this.nextPage} currentPage={this.state.currentPage}/>          
-        <CardList records={filteredRecords} />        
+
+        <Pagination 
+          pages={numberPages} 
+          nextPage={this.nextPage} 
+          currentPage={this.state.currentPage}/>
+
+        <CardList records={filteredRecords} />
+        
+        
       </div>
     )
   }
